@@ -1,0 +1,11 @@
+<%= form_for(@invite, :url => event_invites_path(@event)) do |f| %>
+
+  <p>
+    <%= f.label :guest_name %>
+    <%= f.text_field :guest_name %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %> 

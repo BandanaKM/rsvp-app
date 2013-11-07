@@ -1,0 +1,7 @@
+<h1><%= @event.name %></h1>
+
+<ul>
+  <% @event.invites.each do |invite| %>
+  <li><%= invite.guest.name %> - <%= invite.status %> - <%= link_to "RSVP", edit_invite_path(invite)%></li>
+  <% end %>
+</ul>
